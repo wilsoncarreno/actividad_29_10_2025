@@ -1,0 +1,27 @@
+[project]
+name = "inventario"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "wilsoncarreno",email = "136414588+wilsoncarreno@users.noreply.github.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "flask",
+    "pytest",
+    "pytest-mock",
+    "coverage",
+    "flask-sqlalchemy",
+    "flask-paginate",
+    "behave",
+    "requests",
+    "locust"
+]
+
+[tool.poetry]
+packages = [{include = "inventario", from = "src"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
